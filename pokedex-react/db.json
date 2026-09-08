@@ -1,0 +1,39 @@
+{
+  "equipo": [
+    {
+      "nombre": "charmander",
+      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+      "nivel": 1,
+      "favorito": false,
+      "id": "pAZFJPF1Bao"
+    },
+    {
+      "nombre": "pikachu",
+      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+      "nivel": 1,
+      "favorito": false,
+      "id": "LNvYBkaJOQY"
+    },
+    {
+      "nombre": "venusaur",
+      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+      "nivel": 1,
+      "favorito": false,
+      "id": "1E9ketqJlj4"
+    },
+    {
+      "nombre": "lapras",
+      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+      "nivel": 1,
+      "favorito": false,
+      "id": "sQYoMt7Z6sQ"
+    },
+    {
+      "nombre": "solgaleo",
+      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/791.png",
+      "nivel": 1,
+      "favorito": false,
+      "id": "5alqaSmNTek"
+    }
+  ]
+}
