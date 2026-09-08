@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { obtenerEquipo } from "../services/equipoApi";
+import {actualizarPokemon} from "../services/equipoApi";
+import { eliminarPokemon } from "../services/equipoApi";
 
 function MiEquipo({ actualizarEquipo }) {
     const [equipo, setEquipo] = useState([]);
     const [error, setError] = useState("");
 
-    useEffect(() => {
+    
         const cargarEquipo = async () => {
             try {
                 const datos = await obtenerEquipo();
@@ -14,7 +16,7 @@ function MiEquipo({ actualizarEquipo }) {
                 setError(error.message);
             }
         };
-
+    useEffect(() => {
         cargarEquipo();
     }, [actualizarEquipo]);
 
@@ -37,11 +39,49 @@ function MiEquipo({ actualizarEquipo }) {
                             alt={pokemon.nombre}
                         />
                         <p>Nivel: {pokemon.nivel}</p>
+
+                        <button onClick={() => subirNivel(pokemon)}>
+                            Subir nivel
+                        </button>
+
+                        <button onClick={() => cambiarFavorito(pokemon)}>
+                            {pokemon.favorito
+                                ? "Quitar favorito"
+                                : "Marcar favorito"}
+                        </button>
+
+                        <button onClick={() => liberarPokemon(pokemon.id)}>
+                            Liberar Pokémon
+                        </button>
+
                     </article>
                 ))
             )}
         </section>
     );
 }
+
+const subirNivel = async (pokemon) => {
+    await actualizarPokemon(
+        pokemon.id,
+        { nivel: pokemon.nivel + 1 }
+    );
+
+    cargarEquipo();
+};
+
+const cambiarFavorito = async (pokemon) => {
+    await actualizarPokemon(
+        pokemon.id,
+        { favorito: !pokemon.favorito }
+    );
+
+    cargarEquipo();
+};
+
+const liberarPokemon = async (id) => {
+    await eliminarPokemon(id);
+    cargarEquipo();
+};
 
 export default MiEquipo;

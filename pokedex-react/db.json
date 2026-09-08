@@ -1,39 +1,40 @@
 {
   "equipo": [
     {
-      "nombre": "charmander",
-      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
-      "nivel": 1,
-      "favorito": false,
-      "id": "pAZFJPF1Bao"
-    },
-    {
-      "nombre": "pikachu",
-      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
-      "nivel": 1,
-      "favorito": false,
-      "id": "LNvYBkaJOQY"
-    },
-    {
       "nombre": "venusaur",
       "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
-      "nivel": 1,
+      "nivel": 2,
       "favorito": false,
       "id": "1E9ketqJlj4"
     },
     {
       "nombre": "lapras",
       "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
-      "nivel": 1,
-      "favorito": false,
+      "nivel": 2,
+      "favorito": true,
       "id": "sQYoMt7Z6sQ"
     },
     {
       "nombre": "solgaleo",
       "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/791.png",
-      "nivel": 1,
+      "nivel": 2,
       "favorito": false,
       "id": "5alqaSmNTek"
+    },
+    {
+      "nombre": "tauros",
+      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png",
+      "nivel": 1,
+      "favorito": false,
+      "id": "-4Z3rNhKdlk"
+    },
+    {
+      "nombre": "dragonite",
+      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
+      "nivel": 1,
+      "favorito": false,
+      "id": "X7K0BrPXFpo"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
